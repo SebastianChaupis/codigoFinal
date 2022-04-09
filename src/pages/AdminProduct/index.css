@@ -1,0 +1,21 @@
+
+.description{
+    width: 297px;
+    font-size: 14px;
+    font-weight: 300;
+    color:#374151;
+    text-transform: capitalize;
+}
+.price{
+    font-weight: bold;
+}
+.product-photo{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.div-container{
+    display: grid;
+    justify-content: center;
+    
+}

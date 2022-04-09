@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+ 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  max-height: 60px;
+  min-height: 60px;
+  padding: 20px 10%;
+}
+
+/*logo*/
+.logo {
+  margin-right: auto;
+  font-size: 1.9em;
+  font-weight: 700;
+}
+.logo a {
+  color: black;
+}
+
+/*nav*/
+.nav ul {
+  list-style-type: none;
+}
+.menu-nav ul {
+  display: flex;
+  margin-right: 40px;
+}
+
+.menu-nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.2em;
+}
+
+.btn-login {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #73548b;
+  padding: 1px 9px 6px 9px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-nav {
+   position: absolute;
+    right: -100%;
+    top: 60px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.685);
+    box-shadow: -8px 0px 8px -2px rgba(0, 0, 0, 0.46);
+    height: 100%;
+    transition: 0.3s ease-in;
+  }
+  .menu-nav ul {
+    margin: auto;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  
+  }
+.nav__toggler{
+  display: block !important;
+}
+
+}
+ 
+.nav__toggler div{
+  width: 1.8em;
+  height: 0.2rem;
+  margin: 0.2rem;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+
+}
+
+.nav__toggler {
+  cursor: pointer;
+  display: none;
+}
+
+/*nav active class*/
+
+.nav__active {
+  right: 0;
+}
+
+
+/*toggle icon animation*/
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2{
+opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-4px, -5px);
+}
