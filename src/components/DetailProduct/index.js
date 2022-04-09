@@ -34,10 +34,10 @@ const DetailProduct = () => {
         const p = await getDoc(doc(db, "toys", id)); 
         if (p.exists()) {
             console.log(p.data());
-            
+            //IMPRIME TODO EN UN ARRAY!! 
             setValues({...values,
-                name: p.name,
-                descripcion: p.descripcion,
+                name: p.data().nombre,
+                descripcion: p.data().descripcion,
                 dimension: p.dimension,
                 funcion: p.funcion,
                 url: p.url,
